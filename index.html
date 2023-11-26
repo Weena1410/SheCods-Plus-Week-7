@@ -14,30 +14,42 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." />
-          <input type="submit" value="Search" />
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            id="search-form-input"
+            class="search-form-input" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Dubbo</h1>
-          <p>
-            Sunday 12:20, Cloudy
-            <br />
-            Humidity: 83%, Wind: 16km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">Dubbo</h1>
+            <p class="weather-app-details">
+              Tuesday 14:49, Couldy
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13 km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">☁️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weatehr-app-unit">°C</div>
+          </div>
         </div>
-        <div>☁️ 21ºC</div>
       </main>
       <footer>
         This project was coded by Paweena S, is
         <a
           href="https://github.com/Weena1410/SheCods-Plus-Week-7.git"
           target="_blank"
-          >open-sourched on Github</a
+          >open-sourched on GitHub</a
         >
       </footer>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
